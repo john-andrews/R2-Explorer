@@ -27,6 +27,8 @@ jobs:
           node-version: '20.x'
       - name: Install pnpm
         run: npm install -g pnpm
+      - name: Approve builds  
+        run: pnpm approve-builds --all
       - name: Install dependencies
         run: pnpm install
       - name: Check Lint
